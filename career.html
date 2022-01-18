@@ -16,27 +16,36 @@
   </head>
   <body>
     
-<!-- Navbar begint hier -->
-  <nav>
-    <ul class="nav-flex-row">
-      <li class="nav-item"> <a href="file:///Users/achepriscilla/Desktop/restaurant-website-master/index.html">Home</a>
-      </li>
-      <li class="nav-item">
-        <a href="#reservation">Reservation</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="file:///Users/achepriscilla/Desktop/restaurant-website-master/about.html">About</a>
-      </li>
-      <li class="nav-item">
-        <a href="#shop">Menu</a>
-      </li>
-      <li class="nav-item">
-        <a href="#shop">Career</a>
-      </li>
-    </ul>
-  </nav>
+    <nav>
+      <ul class="nav-flex-row"
+      >
+        <li class="nav-item"> <a class="nav-link" href="file:///Users/achepriscilla/Desktop/restaurant-website-master/index.html">Home</a>
+        </li>
+        <li class="nav-item" onclick="myFunction()">
+          <a class="nav-link" href="file:///Users/achepriscilla/Desktop/restaurant-website-master/reservation.html">Reservation</a>
+          <script>
+            function myFunction() {
+              alert("Please follow the Rules for the hospitality sector ");
+            }
+            </script> 
+        </li>
+  
+        <li class="nav-item dropdown" >
+          <a class="nav-link" href="file:///Users/achepriscilla/Desktop/restaurant-website-master/about.html">About</a>
+        </li>
+        <li class="nav-item"  >
+          <a class="nav-link" href="file:///Users/achepriscilla/Desktop/restaurant-website-master/gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item"  >
+          <a class="nav-link" href="file:///Users/achepriscilla/Desktop/restaurant-website-master/Career.html">Career</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="file:///Users/achepriscilla/Desktop/restaurant-website-master/Marinafood.pdf" >Menu</a>
+        </li>
+      </ul>
+    </nav>
 <!--  -->
-  <section class="section-intro"> 
+  <section class="section-intro">  
     <header>
       <h1>George Hilversum</h1>
     </header>
@@ -84,45 +93,77 @@
          
       </h3>
       <p>
-        If you would like to be a part of our amazing team and are looking to further your career in a best-in-class global restaurant business - apply below with your CV, and let us know which roles/location you would be interested in!
+        If you would like to be a part of our amazing team and are looking to further your career in a best-in-class global restaurant business - apply below with your CV, and let us know which role you would be interested in!
       </p>
     </article>
   </section>
 
-  <div class="container">
-    <div class="row-flex">
-      <div class="flex-column-form">
-        <h3>
-          Make a booking
-        </h3>
-      <form class="media-centered">
-          <div class="form-group">
-            <p>
-              Please leave your number we will call to make a reservation
-            </p>
-            <input type="name" class="form-control" id="exampleInputName1" aria-describedby="nameHelp" placeholder="Enter your first name">
-          </div>
-          <div class="form-group">
-            <input type="number" class="form-control" id="exampleInputphoneNumber1" placeholder="Enter your last namer">
-          </div>
-          <div class="form-group">
-            <input type="number" class="form-control" id="exampleInputphoneNumber1" placeholder="Enter your email">
-          </div>
-          <div class="form-group">
-            <input type="number" class="form-control" id="exampleInputphoneNumber1" placeholder="Enter your phone number">
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+  <main class="page-content">
+    <div class="card">
+      <div class="content">
+        <h2 class="title">Chef</h2>
+        <p class="copy">Check out....</p>
+        <a class="btn" href="mailto:George@hilversum.nl">Apply Now</a>
       </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <h2 class="title">Server</h2>
+        <p class="copy">Check out....</p>
+        <a class="btn" href="mailto:George@hilversum.nl">Apply Now</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <h2 class="title">Front of house</h2>
+        <p class="copy">Check out....</p>
+        <a class="btn" href="mailto:George@hilversum.nl">Apply Now</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <h2 class="title">Managment</h2>
+        <p class="copy">Check out....</p>
+        <a class="btn" href="mailto:George@hilversum.nl">Apply Now</a>
+      </div>
+    </div>
+  </main>
+<img src="./img/extra/Hilversum.png" alt="">
 
+
+<div class="container">
+  <div class="row-flex">
+    <div class="flex-column-form">
+      <h3>
+        Make a booking
+      </h3>
+    <form class="media-centered">
+        <div class="form-group">
+          <p>
+            Please leave your number we will call to make a reservation
+          </p>
+          <input type="name" class="form-control" id="exampleInputName1" aria-describedby="nameHelp" placeholder="Enter your first name">
+        </div>
+        <div class="form-group">
+          <input type="name" class="form-control" id="exampleInputphoneName2" placeholder="Enter your last namer">
+        </div>
+        <div class="form-group">
+          <input type="name" class="form-control" id="exampleInputphoneName3" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <input type="name" class="form-control" id="exampleInputphoneNumber1" placeholder="Enter your phone number">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    </div>
+
+      
       <div class="opening-time">
         <h3>
           Opening times
         </h3>
         <p>
-         <span>Monday—Thursday: 08:00 — 22:00</span> 
-         <span>Friday—Saturday: 09:00 — 23:00 </span>
-         <span>Sunday: 10:00 — 17:00</span>
+         <span>Monday—Friday: 18:00 — 21:00</span> 
         </p>
       </div>
       <div class="contact-adress">
@@ -130,46 +171,17 @@
           Contact
         </h3>
         <p>
-          <span>000 9283 8456</span>
-          <span>15 Florida Ave</span>
-          <span>Palo-Alto, 1111 CA</span>
-        </p> 
+          <span>035-1234567</span>
+          <span>Havenstraat 58</span>
+          <span>1211 KM Hilversum</span>
+        </p>
       </div>
+    </div>
+  <img src="./img/mbo-utrecht.png" alt="mboutrecht" width="150" height="100" style="float:right">
     
     </div>
     </div>
 
-    <main class="page-content">
-        <div class="card">
-          <div class="content">
-            <h2 class="title">Chef</h2>
-            <p class="copy">Check out....</p>
-            <button class="btn">Apply Now</button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="content">
-            <h2 class="title">Waitress</h2>
-            <p class="copy">Check out....</p>
-            <button class="btn">Apply Now</button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="content">
-            <h2 class="title">Front of house</h2>
-            <p class="copy">Check out....</p>
-            <button class="btn">Apply Now</button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="content">
-            <h2 class="title">Managment</h2>
-            <p class="copy">Check out....</p>
-            <button class="btn">Apply Now</button>
-          </div>
-        </div>
-      </main>
-    <img src="./img/extra/Hilversum.png" alt="">
   </body>
   
 
